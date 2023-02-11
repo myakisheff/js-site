@@ -24,7 +24,7 @@ else{
 }
 
 //3
-let userInput = prompt('Введите число', 0);
+let userInput = prompt('(№3) Введите число', 0);
 let result = '';
 
 if(!isNaN(userInput))
@@ -90,7 +90,7 @@ let reachNum = 8;
 
 while(1)
 {
-    let userGuess = prompt('Введите число', 0);
+    let userGuess = prompt('(№5) Введите число', 0);
 
     if(isNaN(userGuess))
     {
@@ -112,3 +112,21 @@ while(1)
     }
 }
 
+//6
+let n;
+let x;
+let y;
+let ans = false;
+
+for(let cycle = Math.floor(Math.random() * (3)) + 4; cycle > 0; cycle--)
+{
+    n = Math.floor(Math.random() * (30)) + 1;
+    x = Math.floor(Math.random() * (10)) + 1;
+    y = Math.floor(Math.random() * (10)) + 1;
+
+    if (n % x == 0 && n % y == 0)
+    {
+        ans = true;
+    }
+    console.log(`n = ${n}, x = ${x}, y = ${y} => ${ans}`);
+}
