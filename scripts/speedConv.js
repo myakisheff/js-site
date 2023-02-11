@@ -84,3 +84,31 @@ for(let i = 0; i < treeLevel; i++)
 tree += '||';
 
 console.log(tree);
+
+//5
+let reachNum = 8;
+
+while(1)
+{
+    let userGuess = prompt('Введите число', 0);
+
+    if(isNaN(userGuess))
+    {
+        console.log('Введено не число');
+        continue;
+    }
+
+    if(userGuess < reachNum)
+    {
+        console.log('Ваше число меньше');
+    }
+    else if(userGuess > reachNum)
+    {
+        console.log('Ваше число больше');
+    }
+    else{
+        console.log('Угадано');
+        break;
+    }
+}
+
