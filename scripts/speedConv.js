@@ -1,6 +1,6 @@
 //1
-let speedKmPerHour = 36;
-let speedMPerSecond = 20;
+let speedKmPerHour = 27;
+let speedMPerSecond = 58;
 
 console.log(`${speedKmPerHour} км/ч соответствует ${speedKmPerHour / 3.6} м/c`);
 console.log(`${speedMPerSecond} м/с соответствует ${speedMPerSecond * 3.6} км/ч`);
@@ -116,7 +116,7 @@ while(1)
 let n;
 let x;
 let y;
-let ans = false;
+let ans;
 
 for(let cycle = Math.floor(Math.random() * (3)) + 4; cycle > 0; cycle--)
 {
@@ -128,5 +128,14 @@ for(let cycle = Math.floor(Math.random() * (3)) + 4; cycle > 0; cycle--)
     {
         ans = true;
     }
+    else
+    {
+        ans = false;
+    }
     console.log(`n = ${n}, x = ${x}, y = ${y} => ${ans}`);
 }
+
+//7
+let month = Math.floor(Math.random() * (12)) + 1;
+
+console.log(`месяц ${month} => квартал ${Math.ceil(month / 3)}`);
