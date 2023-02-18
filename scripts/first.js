@@ -71,14 +71,6 @@ for(let i = 0; i < treeLevel; i++)
         } 
     }
     tree += '\n';
-    /*if(i % 2 == 0)
-    {
-        tree += '#' * i + '\n';
-    }
-    else
-    {
-        tree += '*' * i + '\n';
-    }*/
 }
 
 tree += '||';
@@ -97,7 +89,6 @@ while(1)
         console.log('Введено не число');
         continue;
     }
-
     if(userGuess < reachNum)
     {
         console.log('Ваше число меньше');
