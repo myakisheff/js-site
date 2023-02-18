@@ -41,3 +41,16 @@ const randomNumber = function(min, max){
 console.log(randomNumber(5, 11));
 
 //5
+
+function sampleArray(array, count){
+    let result = [];
+    while(count)
+    {
+        let itemIndex = Math.floor(Math.random() * (array.length));
+        count--;
+        result.push(array[itemIndex]);
+    }
+    return result;
+}
+
+console.log(sampleArray([1,2,'3',4,true, 'hello'], 3));
