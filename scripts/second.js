@@ -33,7 +33,6 @@ let student = {
     console.log(`Студент ${student.first_name} ${student.last_name} учится в ${student.group} группе`);
 
 //4
-
 const randomNumber = function(min, max){
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -46,7 +45,7 @@ function sampleArray(array, count){
     let result = [];
     while(count)
     {
-        let itemIndex = Math.floor(Math.random() * (array.length));
+        let itemIndex = randomNumber(0, array.length-1);
         count--;
         result.push(array[itemIndex]);
     }
